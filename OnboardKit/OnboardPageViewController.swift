@@ -44,7 +44,7 @@ internal final class OnboardPageViewController: UIViewController {
   private lazy var imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.contentMode = .center
+    imageView.contentMode = UIImageView.ContentMode.scaleAspectFit
     return imageView
   }()
 
@@ -162,6 +162,7 @@ internal final class OnboardPageViewController: UIViewController {
     if let imageName = imageName, let image = UIImage(named: imageName) {
       imageView.image = image
       imageView.heightAnchor.constraint(equalTo: pageStackView.heightAnchor, multiplier: 0.5).isActive = true
+
     } else {
       imageView.isHidden = true
     }
