@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     It is written in Swift.
                    DESC
 
-  s.homepage     = "https://github.com/NikolaKirev/OnboardKit"
+  s.homepage     = "https://github.com/muccanado/MUUOnboardKit"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
